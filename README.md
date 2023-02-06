@@ -24,10 +24,10 @@ scraper should be able to retry failed requests a certain number of times before
 parsing the HTML to extract specific pieces of information, or storing the HTML in a database for
 later analysis.
 
-Usage openai example:
+Usage example:
 Load it
 ```
-irb -r ./openai.rb
+irb -r ./queue_scrapper.rb
 ```
 Then scrape from url list 
 ```
