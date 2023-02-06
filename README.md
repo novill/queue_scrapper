@@ -25,6 +25,7 @@ parsing the HTML to extract specific pieces of information, or storing the HTML 
 later analysis.
 
 Usage example:
+
 Load it
 ```
 irb -r ./queue_scrapper.rb
