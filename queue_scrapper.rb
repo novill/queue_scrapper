@@ -2,7 +2,7 @@ require 'open-uri'
 require 'thread'
 
 # The number of threads to use for processing the queue
-NUM_THREADS = 1
+NUM_THREADS = 20
 
 # The number of retries for failed requests
 MAX_RETRIES = 3
@@ -52,7 +52,10 @@ def worker
       $html_cache[url] = 'fetching is in progress' unless is_new
     end
 
-    next if is_new
+    if is_new
+      puts "Url #{url} duplicated. Skipped"
+      next
+    end
 
     html = fetch_html(url)
 
