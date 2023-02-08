@@ -24,13 +24,4 @@ scraper should be able to retry failed requests a certain number of times before
 parsing the HTML to extract specific pieces of information, or storing the HTML in a database for
 later analysis.
 
-Usage example:
-
-Load it
-```
-irb -r ./queue_scrapper.rb
-```
-Then scrape from url list 
-```
-scrape(File.read('url_list.example').split)
-```
+Usage example see in sample.rb
