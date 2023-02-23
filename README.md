@@ -1,3 +1,7 @@
+Test task for Salt Egde https://www.saltedge.com/
+
+The task was rejected without any explanation.
+
 # Queue scrapper
 
 Implement a simple web scraper that takes a list of URLs and retrieves the HTML content of each
